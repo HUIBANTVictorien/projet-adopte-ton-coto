@@ -11,7 +11,14 @@ $('a').on('click', function(event) {
   }
 });
 // Module angular
-var app = angular.module('Adopt', []);
+var app = angular.module('Adopt', ['ngRoute']);
+app.run(function ($rootScope) {
+  $rootScope.src_imgArticle = [];
+  $rootScope.nameArticle = [];
+  $rootScope.priceArticle = [];
+  $rootScope.quantityArticle = [];
+  $rootScope.subtotalArticle = [];
+});
 app.controller('article1Ctrl', function($scope, $http) {
   $http.get("json/1.json").then(function (response) {
     $scope.article1 = response.data;
@@ -37,3 +44,22 @@ app.controller('article5Ctrl', function($scope, $http) {
     $scope.article5 = response.data;
   });
 });
+app.config(['$routeProvider', function ($routeProvider) {
+  $routeProvider
+  .when('/home', {templateUrl: 'partials/home.html', controller: 'article1Ctrl'})
+  .when('/home', {templateUrl: 'partials/home.html', controller: 'article2Ctrl'})
+  .when('/home', {templateUrl: 'partials/home.html', controller: 'article3Ctrl'})
+  .when('/home', {templateUrl: 'partials/home.html', controller: 'article4Ctrl'})
+  .when('/home', {templateUrl: 'partials/home.html', controller: 'article5Ctrl'})
+  .when('/panier', {templateUrl: 'partials/panier.html'})
+  .otherwise({redirectTo: '/home'});
+}]);
+app.controller('test',['$scope', '$rootScope', function($scope, $rootScope){
+  //j'appelle ma fonction sendClick du bouton Envoyer
+  $scope.addPanier=function(){
+    //push permet de récupérer tous les sujets du tableau subjectList
+    var name = document.getElementById("name").innerHTML;
+    $rootScope.nameArticle.push(name);
+    console.log($rootScope.nameArticle);
+  }
+}]);

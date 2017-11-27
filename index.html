@@ -19,7 +19,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Accueil</a></li>
+            <li><a href="#">Accueil</a></li>
             <li><a href="#normaux">Les à peu près normaux</a></li>
             <li><a href="#dormeur">Les dormeurs</a></li>
             <li><a href="#coto">Les cotos</a></li>
@@ -44,127 +44,7 @@
       </div>
     </nav>
   </header>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-12 col-md-12" id="panier">
-        <div class="card bg-info">
-        <div class="card text-white bg-info card-basket">
-          <div class="card-body">
-            <h3 class="card-title">Votre panier</h3>
-            <ul class="list-group" id="basket">
-            </ul>
-            <p>Voir mon panier et commander :</p>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basketModal" id="basketModalButton">Commander</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="separator">
-    <p>Les à peu près normaux</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row" ng-controller="article1Ctrl">
-      <div ng-repeat="article in article1">
-        <div class="col-lg-3" id="normaux">
-          <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
-            <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
-              <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
-              <button type="button" class="btn btn-primary btn-block">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="separator">
-    <p>Les dormeurs</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row" ng-controller="article2Ctrl">
-      <div ng-repeat="article in article2">
-        <div class="col-lg-3" id="dormeur">
-          <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
-            <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
-              <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
-              <button type="button" class="btn btn-primary btn-block">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="separator">
-    <p>Les cotos !</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row" ng-controller="article5Ctrl">
-      <div ng-repeat="article in article5">
-        <div class="col-lg-3" id="coto">
-          <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
-            <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
-              <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
-              <button type="button" class="btn btn-primary btn-block">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="separator">
-    <p>Les DIX E</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row" ng-controller="article3Ctrl">
-      <div ng-repeat="article in article3">
-        <div class="col-lg-3" id="dieu">
-          <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
-            <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
-              <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
-              <button type="button" class="btn btn-primary btn-block">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="separator">
-    <p>LE breton</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row" ng-controller="article4Ctrl">
-      <div ng-repeat="article in article4">
-        <div class="col-lg-3" id="breton">
-          <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
-            <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
-              <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
-              <button type="button" class="btn btn-primary btn-block">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <a href="#" id="btn-basket">
-      <i class="icofont icofont-basket" id="btn-basket1"></i>
-    </a>
-    <a href="#myNavbar" id="btn-directmenu">
-      <i class="icofont icofont-hand-drawn-up"></i>
-    </a>
+  <div class="main" ng-view>
   </div>
 </body>
 <footer>

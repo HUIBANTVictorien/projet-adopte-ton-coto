@@ -7,7 +7,7 @@
     "categorie": "1",
     "description": "Spécimen de type doyen, il arbore une magnifique calvitie qui détourne la plupart des regards de femmes et de certains hommes sur son crâne soyeux.",
     "id": "Alban",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/maxime.jpg",
@@ -16,7 +16,7 @@
     "categorie": "1",
     "description": "Spécimen de type calme, il est aussi intélligent qu'il est barbu, c'est vous dire ! Attention, ne pas nourrir après minuit !",
     "id": "Maxime",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/marieaxelle.png",
@@ -25,7 +25,7 @@
     "categorie": "1",
     "description": "Spécimen de type portuguais, aussi vive que cinglante, elle vous sera très utile pour tout ravalement de façade.",
     "id": "Marie-Axelle",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/ibrahima.jpg",
@@ -34,7 +34,7 @@
     "categorie": "1",
     "description": "Spécimen de type inventif, il adorera vous présenter ses différents modèles de caleçon fait main. Ne pas associer avec du gingembre !",
     "id": "Ibrahima",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/yoann.jpg",
@@ -43,7 +43,7 @@
     "categorie": "1",
     "description": "Spécimen de type fort, il a tout de même réussi à supporter Amadou durant plusieurs semaines, cependant nous ne sommes plus sûre de son intégrité mentale depuis lors.",
     "id": "Yoan",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/zhor.png",
@@ -52,7 +52,7 @@
     "categorie": "1",
     "description": "Spécimen de type réservé, surprise",
     "id": "Zhor",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/chloe.png",
@@ -61,7 +61,7 @@
     "categorie": "1",
     "description": "Spécimen de type vivace, capable de se dissocier efficacement d'une conversation. Afin de développer tout son potentiel cognitif ainsi que d'avoir son attention, solicitez là par la phrase : 'Chloé, URETRE !'",
     "id": "Chloé",
-    "quantité": 1
+    "quantity": 1
   },
   {
     "src_img": "assets/img/anthony.jpg",
@@ -70,6 +70,6 @@
     "categorie": "1",
     "description": "Spécimen de type détendu, vous adorerez sa compagnie surtout si celle ci s'accompagne d'un bon saucisson !",
     "id": "Zhor",
-    "quantité": 1
+    "quantity": 1
   }
 ]

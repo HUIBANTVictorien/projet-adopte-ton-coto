@@ -1,7 +1,7 @@
 
 [
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/alban.jpg",
     "name": "Alban Blanchard",
     "prix": "20.000 €",
     "categorie": "1",
@@ -46,7 +46,7 @@
     "quantité": 1
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/zhor.png",
     "name": "Zhor Lemharzi",
     "prix": "20.000 €",
     "categorie": "1",
@@ -55,7 +55,7 @@
     "quantité": 1
   },
   {
-    "src_img": "assets/img/chloe.jpg",
+    "src_img": "assets/img/chloe.png",
     "name": "Chloé Lente",
     "prix": "20.000 €",
     "categorie": "1",
@@ -64,7 +64,7 @@
     "quantité": 1
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/anthony.jpg",
     "name": "Athony Bouillon",
     "prix": "20.000 €",
     "categorie": "1",

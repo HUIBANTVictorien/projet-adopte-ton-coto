@@ -1,0 +1,36 @@
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="imagesArticle col-lg-3">
+          <p>{{article.src_img}}</p>
+        </div>
+        <div class="nameArticle col-lg-2" ng-repeat="name in nameArticle">
+          <p>{{name}}</p>
+        </div>
+        <div class="priceArticle col-lg-1">
+          <p>{{article.prix}}</p>
+        </div>
+        <div class="quantityArticle col-lg-3">
+          <button type="button" name="buttonPlus">Plus</button>
+          <span>{{article.quantity}}</span>
+          <button type="button" name="buttonMinus">Moins</button>
+        </div>
+        <div class="subtotalArticle col-lg-2">
+          <p>{{article.prix * article.quantity}}</p>
+        </div>
+        <div class="deleteArticle col-lg-1">
+          <button type="button" name="delete">Delete</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-10 col-lg-2">
+          <p>total</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-offset-10 col-lg-2">
+        <button type="validate" name="purchase">Commander</button>
+        </div>
+      </div>
+    </div>
+  </body>

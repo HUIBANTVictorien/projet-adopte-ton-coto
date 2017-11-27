@@ -26,17 +26,22 @@ hr {
 #btn-basket{
   text-decoration: none;
   color: black;
-  border: 2px solid #C0C0C0;
   border-radius: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 40px;
   font-size: 40px;
   right: 10px;
-  padding: 5px;
   bottom: 0;
   position: fixed;
 }
 #btn-basket:hover{
-  background-color: #C0C0C0;
+  opacity: 0.5;
+}
+#btn-directmenu{
+  text-decoration: none;
+  font-size: 40px;
+  right: 10px;
+  bottom: 0;
+  position: fixed;
 }
 .separator {
   color: white;

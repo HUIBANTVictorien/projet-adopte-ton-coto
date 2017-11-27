@@ -11,6 +11,11 @@ hr {
   background:red;
   height:15px;
 }
+#logo{
+  width: 100%;
+  position: relative;
+  top: -15px;
+}
 .block-article p {
   height: 120px;
 }

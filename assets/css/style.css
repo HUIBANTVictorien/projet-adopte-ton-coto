@@ -46,6 +46,9 @@ hr {
   text-align: center;
   background-color: grey;
 }
+.card-basket{
+  padding: 10px;
+}
 #panier {
   height: auto;
   text-align: center;

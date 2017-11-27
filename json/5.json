@@ -1,6 +1,6 @@
 [
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/pierre.jpg",
     "id": "Pierre",
     "name": "Pierre Schuvey",
     "prix": "15.000 €",
@@ -8,7 +8,7 @@
     "description": "Ce produit à une facheuse tendance à se plaindre sans arrêt, cependant il a une abtitude exceptionelle d'être 'mignon' lorsqu'il dort, fan de pokemon il en est lui même un car il à un boule bizarre"
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/pauline.png",
     "id": "Pauline",
     "name": "Pauline Michalowski",
     "prix": "15.000€",
@@ -16,7 +16,7 @@
     "description": "ATTENTION : ce produit n'est pas conseiller aux âmes sensibles, il s'agit d'une piéce rare appellée aussi : 'fais pas chier ou je t'e****le', elle aura tendance à vous insulter de grosse p**e, mais fais preuve d'un attachement prononcer lors d'evenement de plus de 24h."
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/nicolas.jpg",
     "id": "Nicolas",
     "name": "Nicolas Pretre",
     "prix": "15.000 €",
@@ -24,7 +24,7 @@
     "description": "Aussi connus sous le nom de Rainbow Dash, ce produit est une véritable licorne authentique, il fais caca des arc-en-ciels et est fournit avec sa corne et son fidéle compagnon : Gros Cul "
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/loic.jpg",
     "id": "Loic",
     "name": "Loic Magny",
     "prix": "15.000 €",
@@ -32,7 +32,7 @@
     "description": "Cet article est le compagnon idéal pour vos meurtres en famille, il sera capable d'entérrer, brûler, ou même manger toute les preuves. ATTENTION : Garder les femmes et les enfants loin de lui !"
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/thomas.jpg",
     "id": "Thomas",
     "name": "Thomas Szymanski",
     "prix": "15.000 €",
@@ -40,7 +40,7 @@
     "description": "Produit jaloux et joueur, fan de League of legends (paix à son âme), il reste pour autant une piéce magnifique amateur de Lego, avec un sexe encore indéfinis"
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/victorien.jpg",
     "id": "Victorien",
     "name": "Victorien Huibant",
     "prix": "15.000 €",

@@ -1,6 +1,6 @@
 [
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/mickael.jpg",
     "id": "mickeal",
     "name": "Mickeal Noel",
     "prix": "inestimable",
@@ -8,7 +8,7 @@
     "categorie":"3"
   },
   {
-    "src_img": "assets/img/test.jpeg",
+    "src_img": "assets/img/johanne.jpg",
     "id": "johanne",
     "name": "Johanne Badin",
     "prix": "inestimable",

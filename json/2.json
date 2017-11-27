@@ -1,6 +1,6 @@
 [
   {
-     "src_img": "assets/img/test.jpeg",
+     "src_img": "assets/img/victor.jpg",
      "id": "Victor",
      "name": "Victor Andre",
      "prix": "17.500 €",
@@ -8,7 +8,7 @@
      "categorie": "2"
    },
    {
-     "src_img": "assets/img/test.jpeg",
+     "src_img": "assets/img/clement.jpg",
      "id": "Clement",
      "name": "Clément Schuvey",
      "prix": "17.500 €",
@@ -16,7 +16,7 @@
      "categorie": "2"
    },
    {
-     "src_img": "assets/img/test.jpeg",
+     "src_img": "assets/img/romuald.jpg",
      "id": "Romuald",
      "name": "Romuald Ducrocq",
      "prix": "17.500 €",
@@ -24,7 +24,7 @@
      "categorie": "2"
    },
    {
-     "src_img": "assets/img/test.jpeg",
+     "src_img": "assets/img/tarek.jpg",
      "id": "Tarek",
      "name": "Tarek Elouatar",
      "prix": "17.500 €",

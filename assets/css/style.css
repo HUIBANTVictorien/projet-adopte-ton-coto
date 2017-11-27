@@ -12,8 +12,8 @@ hr {
   background:red;
   height:15px;
 }
-.block-article p {
-  height: 170px;
+.ajustDesc {
+  height: 140px;
 }
 .nav-perso{
   border-radius: 0px;
@@ -60,6 +60,11 @@ hr {
 #panier {
   height: auto;
   text-align: center;
+}
+.price{
+  text-align: center;
+  color: red;
+  font-weight: bolder;
 }
 @media screen and (min-width: 200px) and (max-width: 1550px) {
   .block-article {

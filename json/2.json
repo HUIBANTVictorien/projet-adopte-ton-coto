@@ -1,0 +1,34 @@
+[
+  {
+     "src_img": "assets/img/test.jpeg",
+     "id": "Victor",
+     "name": "Victor Andre",
+     "prix": "17.500 €",
+     "description": "Spécimen de type velu, bel homme(d'après Pierre), il ornera aisément votre canapé.",
+     "categorie": "2"
+   },
+   {
+     "src_img": "assets/img/test.jpeg",
+     "id": "Clement",
+     "name": "Clément Schuvey",
+     "prix": "17.500 €",
+     "description": "Error 404: Brain Not Found",
+     "categorie": "2"
+   },
+   {
+     "src_img": "assets/img/test.jpeg",
+     "id": "Romuald",
+     "name": "Romuald Ducrocq",
+     "prix": "17.500 €",
+     "description": "Spécimen de type graphiste, il adorera dessiner votre femme en canvas.",
+     "categorie": "2"
+   },
+   {
+     "src_img": "assets/img/test.jpeg",
+     "id": "Tarek",
+     "name": "Tarek Elouatar",
+     "prix": "17.500 €",
+     "description": "Spécimen de type jeune, il a un palpitant à toute épreuve.",
+     "categorie": "2"
+   }
+]

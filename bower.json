@@ -1,0 +1,18 @@
+{
+  "name": "projet_jquery_S-ware",
+  "homepage": "https://github.com/albanblanchard/projet_jquery_S-ware",
+  "authors": [
+    "Victorien HUIBANT <huibant.victorien@gmail.com>"
+  ],
+  "description": "",
+  "main": "indew.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

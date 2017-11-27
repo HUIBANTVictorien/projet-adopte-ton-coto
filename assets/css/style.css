@@ -1,0 +1,15 @@
+.block-article {
+  margin-top: 20px;
+  width: 300px;
+  height: 500px;
+  background:#efefef;
+  border-radius:5px;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.3),6px 6px 0px 0px #EDEDED;
+}
+hr {
+  background:red;
+  height:15px;
+}
+.block-article p {
+  height: 120px;
+}

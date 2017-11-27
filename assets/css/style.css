@@ -24,17 +24,19 @@ hr {
   margin-left: -12px;
 }
 #btn-basket{
-  border: 2px solid grey;
+  text-decoration: none;
+  color: black;
+  border: 2px solid #C0C0C0;
   border-radius: 15px;
-  margin-bottom: 15px;
-  font-size: 30px;
-  float: right;
+  margin-bottom: 5px;
+  font-size: 40px;
   right: 10px;
+  padding: 5px;
   bottom: 0;
   position: fixed;
 }
 #btn-basket:hover{
-  background-color: grey;
+  background-color: #C0C0C0;
 }
 .separator {
   color: white;
@@ -43,6 +45,9 @@ hr {
   font-size: 32px;
   text-align: center;
   background-color: grey;
+}
+.card-basket{
+  padding: 10px;
 }
 #panier {
   height: auto;

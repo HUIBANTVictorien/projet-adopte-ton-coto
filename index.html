@@ -19,18 +19,19 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Accueil</a></li>
-            <li><a href="#">Tous les articles</a></li>
-            <li><a href="#">Article 1</a></li>
-            <li><a href="#">Article 2</a></li>
-            <li><a href="#">Article 3</a></li>
-            <li><a href="#">Article 4</a></li>
+            <li><a href="#normaux">Les à peu près normaux</a></li>
+            <li><a href="#dormeur">Les dormeurs</a></li>
+            <li><a href="#coto">Les cotos</a></li>
+            <li><a href="#dieu">Les DIX E</a></li>
+            <li><a href="#breton">LE breton</a></li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Articles<span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Catégories<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Article 1</a></li>
-                <li><a href="#">Article 2</a></li>
-                <li><a href="#">Article 3</a></li>
-                <li><a href="#">Article 4d</a></li>
+                <li><a href="#normaux">Les à peu près normaux</a></li>
+                <li><a href="#dormeur">Les dormeurs</a></li>
+                <li><a href="#coto">Les cotos</a></li>
+                <li><a href="#dieu">Les DIX E</a></li>
+                <li><a href="#breton">LE breton</a></li>
               </ul>
             </li>
           </ul>
@@ -45,7 +46,7 @@
   <div class="container-fluid">
     <div class="row" ng-controller="article1Ctrl">
       <div ng-repeat="article in article1">
-        <div class="col-lg-3">
+        <div class="col-lg-3" id="normaux">
           <div class="card block-article">
             <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
@@ -60,7 +61,7 @@
     <hr>
     <div class="row" ng-controller="article2Ctrl">
       <div ng-repeat="article in article2">
-        <div class="col-lg-3">
+        <div class="col-lg-3" id="dormeur">
           <div class="card block-article">
             <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
@@ -75,7 +76,7 @@
     <hr>
     <div class="row" ng-controller="article5Ctrl">
       <div ng-repeat="article in article5">
-        <div class="col-lg-3">
+        <div class="col-lg-3" id="coto">
           <div class="card block-article">
             <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
@@ -90,7 +91,7 @@
     <hr>
     <div class="row" ng-controller="article3Ctrl">
       <div ng-repeat="article in article3">
-        <div class="col-lg-3">
+        <div class="col-lg-3" id="dieu">
           <div class="card block-article">
             <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
@@ -105,7 +106,7 @@
     <hr>
     <div class="row" ng-controller="article4Ctrl">
       <div ng-repeat="article in article4">
-        <div class="col-lg-3">
+        <div class="col-lg-3" id="breton">
           <div class="card block-article">
             <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">

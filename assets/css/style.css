@@ -13,3 +13,6 @@ hr {
 .block-article p {
   height: 120px;
 }
+.nav-perso{
+  border-radius: 0px;
+}

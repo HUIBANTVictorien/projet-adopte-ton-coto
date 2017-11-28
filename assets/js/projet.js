@@ -56,10 +56,15 @@ app.config(['$routeProvider', function ($routeProvider) {
 }]);
 app.controller('test',['$scope', '$rootScope', function($scope, $rootScope){
   //j'appelle ma fonction sendClick du bouton Envoyer
+  $scope.showId = function(id){
+    console.log(id);
+};
   $scope.addPanier=function(){
     //push permet de récupérer tous les sujets du tableau subjectList
-    var name = document.getElementById("name").innerHTML;
-    $rootScope.nameArticle.push(name);
-    console.log($rootScope.nameArticle);
+    var id = $scope.$index;
+      console.log(id);
+      var name = document.getElementById('name.'+id).innerHTML;
+      $rootScope.nameArticle.push(name);
+      console.log($rootScope.nameArticle);
   }
 }]);

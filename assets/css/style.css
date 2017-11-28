@@ -22,7 +22,7 @@ hr {
   color: white;
 }
 .ajustDesc {
-  height: 140px;
+  height: 105px;
 }
 .nav-perso{
   border-radius: 0px;
@@ -65,7 +65,33 @@ hr {
 }
 .card-basket{
   padding: 10px;
-  }
+}
+.card-body {
+  text-align: center;
+}
+.panierStyle {
+}
+.nameStyle {
+border: 1px solid;
+border-radius: 5px;
+text-align: center;
+border-color: blue;
+}
+.priceStyle {
+text-align: center;
+}
+.quantityStyle {
+text-align: center;
+}
+.subtotalStyle {
+text-align: center;
+}
+.deleteStyle {
+text-align: center;
+}
+.totalStyle {
+  margin-top: 75px;
+}
 #panier {
   height: auto;
   text-align: center;

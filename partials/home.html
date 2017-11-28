@@ -20,28 +20,8 @@
   </div>
   <div class="container-fluid">
     <div class="row" ng-controller="article1Ctrl">
-      <div ng-repeat="article in article1">
+      <div ng-repeat="article in article1" ng-controller="cartNormaux">
         <div class="col-lg-3" id="normaux">
-          <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
-            <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
-              <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
-              <button type="button" class="btn btn-primary btn-block" ng-click="addPanier()">Acheter</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="separator">
-    <p>Les dormeurs</p>
-  </div>
-  <div class="container-fluid">
-    <div class="row" ng-controller="article2Ctrl">
-      <div ng-repeat="article in article2" ng-controller="cart">
-        <div class="col-lg-3">
           <div class="card block-article">
             <img class="card-img-top" id="img{{$index}}"src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
@@ -57,18 +37,40 @@
     </div>
   </div>
   <div class="separator">
+    <p>Les dormeurs</p>
+  </div>
+  <div class="container-fluid">
+    <div class="row" ng-controller="article2Ctrl">
+      <div ng-repeat="article in article2" ng-controller="cartDormeur">
+        <div class="col-lg-3" id="dormeur">
+          <div class="card block-article">
+            <img class="card-img-top" id="imgd{{$index}}"src="{{article.src_img}}" width="100%" alt="Articles images">
+            <div class="card-body">
+              <h4 class="card-title text-center" id="named{{$index}}">{{article.name}}</h4>
+              <p class="card-text ajustDesc">{{article.description}}</p>
+              <p class="price" id="priced{{$index}}">{{article.prix}}</p>
+              <input type="number" id="quantityd{{$index}}" name="quantity" value="1">
+              <button type="button" class="btn btn-primary btn-block" ng-click="addPanier()">Acheter</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="separator">
     <p>Les cotos !</p>
   </div>
   <div class="container-fluid">
     <div class="row" ng-controller="article5Ctrl">
-      <div ng-repeat="article in article5">
+      <div ng-repeat="article in article5" ng-controller="cartCoto">
         <div class="col-lg-3" id="coto">
           <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
+            <img class="card-img-top" id="imgc{{$index}}"src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
+              <h4 class="card-title text-center" id="namec{{$index}}">{{article.name}}</h4>
               <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
+              <p class="price" id="pricec{{$index}}">{{article.prix}}</p>
+              <input type="number" id="quantityc{{$index}}" name="quantity" value="1">
               <button type="button" class="btn btn-primary btn-block" ng-click="addPanier()">Acheter</button>
             </div>
           </div>
@@ -81,14 +83,15 @@
   </div>
   <div class="container-fluid">
     <div class="row" ng-controller="article3Ctrl">
-      <div ng-repeat="article in article3">
+      <div ng-repeat="article in article3" ng-controller="cartDieu">
         <div class="col-lg-3" id="dieu">
           <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
+            <img class="card-img-top" id="imgg{{$index}}"src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
+              <h4 class="card-title text-center" id="nameg{{$index}}">{{article.name}}</h4>
               <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
+              <p class="price" id="priceg{{$index}}">{{article.prix}}</p>
+              <input type="number" id="quantityg{{$index}}" name="quantity" value="1">
               <button type="button" class="btn btn-primary btn-block" ng-click="addPanier()">Acheter</button>
             </div>
           </div>
@@ -101,20 +104,22 @@
   </div>
   <div class="container-fluid">
     <div class="row" ng-controller="article4Ctrl">
-      <div ng-repeat="article in article4">
+      <div ng-repeat="article in article4" ng-controller="cartBreton">
         <div class="col-lg-3" id="breton">
           <div class="card block-article">
-            <img class="card-img-top" src="{{article.src_img}}" width="100%" alt="Articles images">
+            <img class="card-img-top" id="imgb{{$index}}"src="{{article.src_img}}" width="100%" alt="Articles images">
             <div class="card-body">
-              <h4 class="card-title text-center">{{article.name}}</h4>
+              <h4 class="card-title text-center" id="nameb{{$index}}">{{article.name}}</h4>
               <p class="card-text ajustDesc">{{article.description}}</p>
-              <p class="price">{{article.prix}}</p>
+              <p class="price" id="priceb{{$index}}">{{article.prix}}</p>
+              <input type="number" id="quantityb{{$index}}" name="quantity" value="1">
               <button type="button" class="btn btn-primary btn-block" ng-click="addPanier()">Acheter</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
     <a href="#!/panier" id="btn-basket">
       <i class="icofont icofont-basket" id="btn-basket1" ng-click=""></i>
     </a>

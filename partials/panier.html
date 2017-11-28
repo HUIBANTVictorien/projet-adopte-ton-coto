@@ -1,36 +1,38 @@
-  <body ng-app="Adopt" >
-    <div class="container-fluid">
-      <div class="row panierStyle">
-        <div class="imagesArticle col-lg-2">
-          <p ng-repeat="img in src_imgArticle track by $index"><img style="height:60px; width:60px;"src="{{img}}"></img></p>
-        </div>
-        <div style="font-size:16px; height:60px;" class="nameArticle col-lg-2">
-          <p class="nameStyle" style="padding:20px;" ng-repeat="name in nameArticle track by $index">{{name}}</p>
-        </div>
-        <div style="font-size:16px; height:60px;" class="priceArticle priceStyle col-lg-3" >
-          <p style="padding:20px;" ng-repeat="price in priceArticle track by $index">Prix : {{price}} €</p>
-        </div>
-        <div style="height:60px;" class="quantityArticle quantityStyle col-lg-2">
-          <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index">
+<body ng-app="Adopt" >
+  <div class="container-fluid">
+    <div class="row panierStyle">
+      <div class="imagesArticle col-lg-2">
+        <p ng-repeat="img in src_imgArticle track by $index"><img style="height:60px; width:60px;"src="{{img}}"></img></p>
+      </div>
+      <div style="font-size:16px; height:60px;" class="nameArticle col-lg-2">
+        <p class="nameStyle" style="padding:20px;" ng-repeat="name in nameArticle track by $index">{{name}}</p>
+      </div>
+      <div style="font-size:16px; height:60px;" class="priceArticle priceStyle col-lg-3" >
+        <p style="padding:20px;" ng-repeat="price in priceArticle track by $index">Prix : {{price}} €</p>
+      </div>
+      <div style="height:60px;" class="quantityArticle quantityStyle col-lg-2">
+        <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index">
+          <button class="btn btn-primary" type="button" name="minus">Moins</button>
           <input style="width:50px;" value="{{quantity}}"></input>
+          <button class="btn btn-primary" type="button" name="plus">Plus</button>
         </div>
       </div>
-        <div style="font-size:16px; height:60px;" class="subtotalArticle subtotalStyle col-lg-2">
-          <p style="padding:20px;" ng-repeat="subtotal in subtotalArticle track by $index">Sous-total : {{subtotal}} €</p>
-        </div>
-        <div style="height:60px;" class="deleteArticle deleteStyle col-lg-1">
-          <button class="btn btn-primary" style="margin:20px;" ng-repeat="name in nameArticle track by $index" type="button" name="delete">Delete</button>
-        </div>
+      <div style="font-size:16px; height:60px;" class="subtotalArticle subtotalStyle col-lg-2">
+        <p style="padding:20px;" ng-repeat="subtotal in subtotalArticle track by $index">Sous-total : {{subtotal}} €</p>
       </div>
-      <div class="row">
-        <div class="col-lg-offset-10 col-lg-2 totalStyle">
-          <p style="font-size:16px;">Total : {{getTotal()}} €</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-offset-10 col-lg-2">
-        <button class="btn btn-primary" type="validate" name="purchase">Commander</button>
-        </div>
+      <div style="height:60px;" class="deleteArticle deleteStyle col-lg-1">
+        <button class="btn btn-primary" style="margin:20px;" ng-repeat="name in nameArticle track by $index" type="button" name="delete">Delete</button>
       </div>
     </div>
-  </body>
+    <div class="row">
+      <div class="col-lg-offset-10 col-lg-2 totalStyle">
+        <p style="font-size:16px;">Total : {{getTotal()}} €</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-offset-10 col-lg-2">
+        <button class="btn btn-primary" type="validate" name="purchase">Commander</button>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,30 +1,30 @@
-  <body>
+  <body ng-app="Adopt" ng-controller="cart">
     <div class="container-fluid">
       <div class="row">
-        <div class="imagesArticle col-lg-3">
-          <p>{{article.src_img}}</p>
+        <div class="imagesArticle col-lg-2">
+          <p ng-repeat="img in src_imgArticle track by $index"><img style="height:60px; width:60px;"src="{{img}}"></img></p>
         </div>
-        <div class="nameArticle col-lg-2" ng-repeat="name in nameArticle">
-          <p>{{name}}</p>
+        <div style="font-size:16px; height:60px;" class="nameArticle col-lg-2">
+          <p style="padding:20px;" ng-repeat="name in nameArticle track by $index">{{name}}</p>
         </div>
-        <div class="priceArticle col-lg-1">
-          <p>{{article.prix}}</p>
+        <div style="font-size:16px; height:60px;" class="priceArticle col-lg-1" >
+          <p style="padding:20px;" ng-repeat="price in priceArticle track by $index">{{price}} €</p>
         </div>
-        <div class="quantityArticle col-lg-3">
-          <button type="button" name="buttonPlus">Plus</button>
-          <span>{{article.quantity}}</span>
-          <button type="button" name="buttonMinus">Moins</button>
+        <div style="height:60px;" class="quantityArticle col-lg-2">
+          <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index">
+          <input type="number" style="width:50px;" value="{{quantity}}"></input>
         </div>
-        <div class="subtotalArticle col-lg-2">
-          <p>{{article.prix * article.quantity}}</p>
+      </div>
+        <div style="font-size:16px; height:60px;" class="deleteArticle col-lg-2">
+          <p style="padding:20px;" ng-repeat="subtotal in subtotalArticle track by $index">{{subtotal}} €</p>
         </div>
-        <div class="deleteArticle col-lg-1">
-          <button type="button" name="delete">Delete</button>
+        <div style="height:60px;" class="deleteArticle col-lg-1">
+          <button style="margin:20px;" ng-repeat="name in nameArticle track by $index" type="button" name="delete">Delete</button>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-offset-10 col-lg-2">
-          <p>total</p>
+          <p style="font-size:16px;">{{getTotal()}} €</p>
         </div>
       </div>
       <div class="row">

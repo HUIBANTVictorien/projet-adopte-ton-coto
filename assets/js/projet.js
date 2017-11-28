@@ -54,12 +54,26 @@ app.config(['$routeProvider', function ($routeProvider) {
   .when('/panier', {templateUrl: 'partials/panier.html'})
   .otherwise({redirectTo: '/home'});
 }]);
-app.controller('test',['$scope', '$rootScope', function($scope, $rootScope){
-  //j'appelle ma fonction sendClick du bouton Envoyer
+app.controller('cart',['$scope', '$rootScope', function($scope, $rootScope){
   $scope.addPanier=function(){
-    //push permet de récupérer tous les sujets du tableau subjectList
-    var name = document.getElementById("name").innerHTML;
+    var id = $scope.$index;
+    var name = document.getElementById('name'+id).innerHTML;
+    var price = document.getElementById('price'+id).innerHTML;
+    var quantity = document.getElementById('quantity'+id).value;
+    var subTotal = price * quantity;
+    var img = document.getElementById('img'+id).src;
     $rootScope.nameArticle.push(name);
-    console.log($rootScope.nameArticle);
+    $rootScope.priceArticle.push(price);
+    $rootScope.quantityArticle.push(quantity);
+    $rootScope.subtotalArticle.push(subTotal);
+    $rootScope.src_imgArticle.push(img);
+  }
+  $rootScope.getTotal = function(){
+    var total = 0;
+    for(var i =0; i < $rootScope.subtotalArticle.length; i++){
+      var product = $rootScope.subtotalArticle[i];
+      total += (product);
+    }
+    return total;
   }
 }]);

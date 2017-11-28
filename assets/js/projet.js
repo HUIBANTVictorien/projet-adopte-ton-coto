@@ -54,7 +54,7 @@ app.config(['$routeProvider', function ($routeProvider) {
   .when('/panier', {templateUrl: 'partials/panier.html'})
   .otherwise({redirectTo: '/home'});
 }]);
-app.controller('cart',['$scope', '$rootScope', function($scope, $rootScope){
+app.controller('cartNormaux',['$scope', '$rootScope', function($scope, $rootScope){
   $scope.addPanier=function(){
     var id = $scope.$index;
     var name = document.getElementById('name'+id).innerHTML;
@@ -75,5 +75,65 @@ app.controller('cart',['$scope', '$rootScope', function($scope, $rootScope){
       total += (product);
     }
     return total;
+  }
+}]);
+app.controller('cartDormeur',['$scope', '$rootScope', function($scope, $rootScope){
+  $scope.addPanier=function(){
+    var id = $scope.$index;
+    var name = document.getElementById('named'+id).innerHTML;
+    var price = document.getElementById('priced'+id).innerHTML;
+    var quantity = document.getElementById('quantityd'+id).value;
+    var subTotal = price * quantity;
+    var img = document.getElementById('imgd'+id).src;
+    $rootScope.nameArticle.push(name);
+    $rootScope.priceArticle.push(price);
+    $rootScope.quantityArticle.push(quantity);
+    $rootScope.subtotalArticle.push(subTotal);
+    $rootScope.src_imgArticle.push(img);
+  }
+}]);
+app.controller('cartCoto',['$scope', '$rootScope', function($scope, $rootScope){
+  $scope.addPanier=function(){
+    var id = $scope.$index;
+    var name = document.getElementById('namec'+id).innerHTML;
+    var price = document.getElementById('pricec'+id).innerHTML;
+    var quantity = document.getElementById('quantityc'+id).value;
+    var subTotal = price * quantity;
+    var img = document.getElementById('imgc'+id).src;
+    $rootScope.nameArticle.push(name);
+    $rootScope.priceArticle.push(price);
+    $rootScope.quantityArticle.push(quantity);
+    $rootScope.subtotalArticle.push(subTotal);
+    $rootScope.src_imgArticle.push(img);
+  }
+}]);
+app.controller('cartDieu',['$scope', '$rootScope', function($scope, $rootScope){
+  $scope.addPanier=function(){
+    var id = $scope.$index;
+    var name = document.getElementById('nameg'+id).innerHTML;
+    var price = document.getElementById('priceg'+id).innerHTML;
+    var quantity = document.getElementById('quantityg'+id).value;
+    var subTotal = price * quantity;
+    var img = document.getElementById('imgg'+id).src;
+    $rootScope.nameArticle.push(name);
+    $rootScope.priceArticle.push(price);
+    $rootScope.quantityArticle.push(quantity);
+    $rootScope.subtotalArticle.push(subTotal);
+    $rootScope.src_imgArticle.push(img);
+  }
+}]);
+app.controller('cartBreton',['$scope', '$rootScope', function($scope, $rootScope){
+  $scope.addPanier=function(){
+    var id = $scope.$index;
+    var name = document.getElementById('nameb'+id).innerHTML;
+    var price = document.getElementById('priceb'+id).innerHTML;
+    var quantity = document.getElementById('quantityb'+id).value;
+    var subTotal = price * quantity;
+    var img = document.getElementById('imgb'+id).src;
+    $rootScope.nameArticle.push(name);
+    $rootScope.priceArticle.push(price);
+    $rootScope.quantityArticle.push(quantity);
+    $rootScope.subtotalArticle.push(subTotal);
+    $rootScope.src_imgArticle.push(img);
   }
 }]);

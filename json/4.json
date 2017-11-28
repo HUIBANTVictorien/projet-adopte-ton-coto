@@ -3,7 +3,7 @@
     "src_img": "assets/img/fabrice.jpg",
     "id": "Fabrice",
     "name": "Fabrice Burel",
-    "prix": "Don d'€",
+    "prix": 0,
     "description": "Spécimen de type breton, prix à débattre, on veut bien vous donner des sous afin que vous l'adoptiez. Cale très bien un meuble.",
     "categorie": "4",
     "quantity": 1

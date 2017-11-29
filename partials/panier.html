@@ -8,7 +8,7 @@
         <p class="nameStyle" style="padding:20px;" ng-repeat="name in nameArticle track by $index">{{name}}</p>
       </div>
       <div style="font-size:16px; height:60px;" class="priceArticle priceStyle col-lg-3">
-        <p style="padding:20px;" ng-repeat="price in priceArticle track by $index" id="priceBasket{{$index}}">{{price}}</p>
+        <p style="padding:20px;" ng-repeat="price in priceArticle track by $index" id="priceBasket{{$index}}">Prix : {{price}}</p>
       </div>
       <div style="height:60px;" class="quantityArticle quantityStyle col-lg-2">
         <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index">
@@ -18,10 +18,10 @@
         </div>
       </div>
       <div style="font-size:16px; height:60px;" class="subtotalArticle subtotalStyle col-lg-2">
-        <p style="padding:20px;" ng-repeat="subTotal in subtotalArticle track by $index" >{{subTotal}}</p>
+        <p style="padding:20px;" ng-repeat="subTotal in subtotalArticle track by $index" >Sous-total : {{subTotal}} €</p>
       </div>
       <div style="height:60px;" class="deleteArticle deleteStyle col-lg-1">
-        <button class="btn btn-primary" style="margin:20px;" ng-repeat="name in nameArticle track by $index" type="button" name="delete">Delete</button>
+        <button class="btn btn-primary" style="margin:20px;" ng-click="remove(line)" ng-repeat="name in nameArticle track by $index" type="button" name="delete">Delete</button>
       </div>
     </div>
     <div class="row">

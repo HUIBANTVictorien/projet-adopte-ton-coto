@@ -80,6 +80,18 @@ app.config(['$routeProvider', function ($routeProvider) {
 //     console.log("'#subTotal"+id);
 //   }
 // }]);
+app.controller('delete',['$scope', '$rootScope', function($scope, $rootScope){
+$scope.delete = function(){
+  var id = this.$index;
+  document.querySelector('#imgbasket'+id).remove();
+  document.querySelector('#priceBasket'+id).remove();
+  document.querySelector('#subTotal'+id).remove();
+  document.querySelector('#quantityBasket'+id).remove();
+    document.querySelector('#deletebasket'+id).remove();
+      document.querySelector('#namebasket'+id).remove();
+  console.log('#imgbasket'+id);
+  }
+}]);
 app.controller('cartNormaux',['$scope', '$rootScope', function($scope, $rootScope){
   $scope.addPanier=function(){
     var id = $scope.$index;

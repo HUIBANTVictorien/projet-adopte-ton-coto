@@ -12,9 +12,9 @@
       </div>
       <div style="height:60px;" class="quantityArticle quantityStyle col-lg-2">
         <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index">
-          <button class="btn btn-primary" type="button" name="minus">Moins</button>
-          <input style="width:50px;" value="{{quantity}}"></input>
-          <button class="btn btn-primary" type="button" name="plus">Plus</button>
+          <button class="btn btn-primary" type="button" name="minus" ng-init ="quantity = {{quantity}}" ng-click="quantity = quantity - 1" ng-disabled="quantity == 1">Moins</button>
+            <span style="width:50px;">{{quantity}}</span>
+          <button class="btn btn-primary" type="button" name="plus" ng-init ="quantity = {{quantity}}" ng-click="quantity = quantity + 1; ">Plus</button>
         </div>
       </div>
       <div style="font-size:16px; height:60px;" class="subtotalArticle subtotalStyle col-lg-2">

@@ -54,6 +54,19 @@ app.config(['$routeProvider', function ($routeProvider) {
   .when('/panier', {templateUrl: 'partials/panier.html'})
   .otherwise({redirectTo: '/home'});
 }]);
+app.controller('basket',['$scope','$rootScope', function($scope,$rootScope){
+  $scope.moreArticle = function() {
+    var id = $scope.$index;
+    var quantityInit = 1;
+    var quantity = document.getElementById('quantityBasket'+id).innerHTML;
+    quantity = parseInt(quantity);
+    var quantity = quantityInit + quantity;
+    var price = document.getElementById('priceBasket'+id).innerHTML;
+    var price = parseInt(price);
+    var subTotal1 = quantity * price;
+    $rootScope.subTotal2 = subTotal1;
+  }
+}]);
 app.controller('cartNormaux',['$scope', '$rootScope', function($scope, $rootScope){
   $scope.addPanier=function(){
     var id = $scope.$index;
@@ -80,6 +93,10 @@ app.controller('cartNormaux',['$scope', '$rootScope', function($scope, $rootScop
       total += (product);
     }
     return total;
+  }
+  $scope.moreArticle = function() {
+    var id = $scope.$index;
+    console.log('test ');
   }
 }]);
 app.controller('cartDormeur',['$scope', '$rootScope', function($scope, $rootScope){

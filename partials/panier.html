@@ -1,27 +1,27 @@
 <body ng-app="Adopt" >
   <div class="container-fluid">
     <div class="row panierStyle">
-      <div class="imagesArticle col-lg-2">
-        <p ng-repeat="img in src_imgArticle track by $index"><img style="height:60px; width:60px;"src="{{img}}"></img></p>
+      <div class="imagesArticle col-lg-2" ng-controller="delete">
+        <p id="imgbasket{{$index}}" ng-repeat="img in src_imgArticle track by $index"><img style="height:60px; width:60px;"src="{{img}}"></img></p>
       </div>
       <div style="font-size:16px; height:60px;" class="nameArticle col-lg-2">
-        <p class="nameStyle" style="padding:20px;" ng-repeat="name in nameArticle track by $index">{{name}}</p>
+        <p id="namebasket{{$index}}" class="nameStyle" style="padding:20px;" ng-repeat="name in nameArticle track by $index">{{name}}</p>
       </div>
       <div style="font-size:16px; height:60px;" class="priceArticle priceStyle col-lg-3">
         <p style="padding:20px;" ng-repeat="price in priceArticle track by $index" id="priceBasket{{$index}}">{{price}}</p>
       </div>
       <div style="height:60px;" class="quantityArticle quantityStyle col-lg-2">
-        <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index">
+        <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index" id="quantityBasket{{$index}}">
           <button class="btn btn-primary" type="button" name="minus" ng-click="quantity = quantity - 1; minusArticle()" ng-disabled="quantity == 1">Moins</button>
-            <span style="width:50px;" id="quantityBasket{{$index}}">{{quantity}}</span>
+            <span style="width:50px;" >{{quantity}}</span>
           <button class="btn btn-primary" type="button" name="plus" ng-click="quantity = quantity + 1; moreArticle();">Plus</button>
         </div>
       </div>
       <div style="font-size:16px; height:60px;" class="subtotalArticle subtotalStyle col-lg-2">
-        <p style="padding:20px;" ng-repeat="subTotal in subtotalArticle track by $index" >{{subTotal}}</p>
+        <p style="padding:20px;" ng-repeat="subTotal in subtotalArticle track by $index" id="subTotal{{$index}}" >{{subTotal}}</p>
       </div>
-      <div style="height:60px;" class="deleteArticle deleteStyle col-lg-1">
-        <button class="btn btn-primary" style="margin:20px;" ng-repeat="name in nameArticle track by $index" type="button" name="delete">Delete</button>
+      <div style="height:60px;" class="deleteArticle deleteStyle col-lg-1" ng-controller="delete">
+        <button class="btn btn-primary" style="margin:20px;" ng-repeat="name in nameArticle track by $index" type="button" name="delete" id="deletebasket{{$index}}" ng-click="delete()">Delete</button>
       </div>
     </div>
     <div class="row">

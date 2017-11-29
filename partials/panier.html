@@ -12,7 +12,7 @@
       </div>
       <div style="height:60px;" class="quantityArticle quantityStyle col-lg-2">
         <div style="padding:20px;" ng-repeat="quantity in quantityArticle track by $index" ng-controller="basket">
-          <button class="btn btn-primary" type="button" name="minus" ng-click="quantity = quantity - 1" ng-disabled="quantity == 1">Moins</button>
+          <button class="btn btn-primary" type="button" name="minus" ng-click="quantity = quantity - 1; minusArticle()" ng-disabled="quantity == 1">Moins</button>
             <span style="width:50px;" id="quantityBasket{{$index}}">{{quantity}}</span>
           <button class="btn btn-primary" type="button" name="plus" ng-click="quantity = quantity + 1; moreArticle();">Plus</button>
         </div>

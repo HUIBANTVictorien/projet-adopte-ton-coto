@@ -55,6 +55,17 @@ app.config(['$routeProvider', function ($routeProvider) {
   .otherwise({redirectTo: '/home'});
 }]);
 app.controller('basket',['$scope','$rootScope', function($scope,$rootScope){
+  $scope.minusArticle = function(){
+    var id = $scope.$index;
+    var quantityInit = 1;
+    var quantity = document.getElementById('quantityBasket'+id).innerHTML;
+    quantity = parseInt(quantity);
+    var quantity = quantityInit + quantity;
+    var price = document.getElementById('priceBasket'+id).innerHTML;
+    var price = parseInt(price);
+    var subTotal1 = quantity * price - price * 2;
+    $rootScope.subTotal2 = subTotal1;
+  }
   $scope.moreArticle = function() {
     var id = $scope.$index;
     var quantityInit = 1;

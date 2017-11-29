@@ -60,6 +60,11 @@ app.controller('cartNormaux',['$scope', '$rootScope', function($scope, $rootScop
     var name = document.getElementById('name'+id).innerHTML;
     var price = document.getElementById('price'+id).innerHTML;
     var quantity = document.getElementById('quantity'+id).value;
+    quantity = parseInt(quantity);
+    price = parseInt(price);
+    if (quantity <= 0) {
+      quantity = 0;
+    }
     var subTotal = price * quantity;
     var img = document.getElementById('img'+id).src;
     $rootScope.nameArticle.push(name);
@@ -83,6 +88,7 @@ app.controller('cartDormeur',['$scope', '$rootScope', function($scope, $rootScop
     var name = document.getElementById('named'+id).innerHTML;
     var price = document.getElementById('priced'+id).innerHTML;
     var quantity = document.getElementById('quantityd'+id).value;
+    quantity = parseInt(quantity);
     var subTotal = price * quantity;
     var img = document.getElementById('imgd'+id).src;
     $rootScope.nameArticle.push(name);
@@ -98,6 +104,7 @@ app.controller('cartCoto',['$scope', '$rootScope', function($scope, $rootScope){
     var name = document.getElementById('namec'+id).innerHTML;
     var price = document.getElementById('pricec'+id).innerHTML;
     var quantity = document.getElementById('quantityc'+id).value;
+    quantity = parseInt(quantity);
     var subTotal = price * quantity;
     var img = document.getElementById('imgc'+id).src;
     $rootScope.nameArticle.push(name);
@@ -113,6 +120,7 @@ app.controller('cartDieu',['$scope', '$rootScope', function($scope, $rootScope){
     var name = document.getElementById('nameg'+id).innerHTML;
     var price = document.getElementById('priceg'+id).innerHTML;
     var quantity = document.getElementById('quantityg'+id).value;
+    quantity = parseInt(quantity);
     var subTotal = price * quantity;
     var img = document.getElementById('imgg'+id).src;
     $rootScope.nameArticle.push(name);
@@ -128,6 +136,7 @@ app.controller('cartBreton',['$scope', '$rootScope', function($scope, $rootScope
     var name = document.getElementById('nameb'+id).innerHTML;
     var price = document.getElementById('priceb'+id).innerHTML;
     var quantity = document.getElementById('quantityb'+id).value;
+    quantity = parseInt(quantity);
     var subTotal = price * quantity;
     var img = document.getElementById('imgb'+id).src;
     $rootScope.nameArticle.push(name);

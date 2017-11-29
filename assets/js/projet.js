@@ -119,10 +119,6 @@ app.controller('cartNormaux',['$scope', '$rootScope', function($scope, $rootScop
     }
     return total;
   }
-  $scope.moreArticle = function() {
-    var id = $scope.$index;
-    console.log('test ');
-  }
 }]);
 app.controller('cartDormeur',['$scope', '$rootScope', function($scope, $rootScope){
   $scope.addPanier=function(){
